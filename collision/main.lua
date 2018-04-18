@@ -1,6 +1,7 @@
 --! file:main.Lua
 
 function love.load()
+  --Create a couple rectangles
   r1 = {
     x = 10,
     y = 100,
@@ -18,7 +19,7 @@ function love.load()
 end
 
 function love.update(dt)
-  --r1.x = r1.x + 100 * dt
+  -- Move r1 around with arrow keys
   if love.keyboard.isDown("right") then
     r1.x = r1.x + 100 * dt
   elseif love.keyboard.isDown("down") then
